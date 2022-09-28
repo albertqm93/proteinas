@@ -85,6 +85,9 @@ const Footer = () => {
                         <li className="headerLi">
                         <Link to="/cheesecake" className="title">Tarta de Queso</Link>
                         </li>
+                        <li className="headerLi">
+                        <Link to="/proteinas" className="title">Proteinas</Link>
+                        </li>
                         {isLogged && (<li className="footerLi">
                             <Link to="/cocktail" className="title">Cocktail</Link>
                         </li>)}

@@ -5,72 +5,60 @@ import {
     Link
   } from "react-router-dom";
 
-import '../styles/cheesecake.scss'
+import '../styles/proteinas.scss'
 
 import tartaTradicional from '../images/cheesecake/tarta-de-queso-tradicional.jpeg'
 import tartaChocolate from '../images/cheesecake/tarta-de-queso-y-chocolate.jpeg'
 import tartaManzana from '../images/cheesecake/tarta-de-queso-y-manzana.jpeg'
 
-const Cheesecake = () => {
+const Proteinas = () => {
     return(
-        <div className="cheesecakeJS">
-            <div className="cheesecake">
+        <div className="proteinasJS">
+            <div className="proteinas">
             <Carousel>
-                    <Carousel.Item interval={4000}>
-                        <img
-                        className="d-block w-100"
-                        src={tartaTradicional}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        <h3>First sluwuide label</h3>
+                <Carousel.Item interval={4000}>
+                    <img className="d-block w-100" src={tartaTradicional} />
+                    <Carousel.Caption>
+                        <h3>First slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+                    </Carousel.Caption>
+                </Carousel.Item>
 
-                    <Carousel.Item interval={4000}>
-                        <img
-                        className="d-block w-100"
-                        src={tartaChocolate}
-                        alt="Second slide"
-                        />
+                <Carousel.Item interval={4000}>
+                    <img className="d-block w-100" src={tartaChocolate} alt="Second slide" />
 
-                        <Carousel.Caption>
+                    <Carousel.Caption>
                         <h3>Second slide label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+                    </Carousel.Caption>
+                </Carousel.Item>
 
-                    <Carousel.Item interval={4000}>
-                        <img
-                        className="d-block w-100"
-                        src={tartaManzana}
-                        alt="Third slide"
-                        />
+                <Carousel.Item interval={4000}>
+                    <img className="d-block w-100" src={tartaManzana} alt="Third slide" />
 
-                        <Carousel.Caption>
+                    <Carousel.Caption>
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                </div>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+                
             <div id="espacio">
                 <div className="article1">
                     <div className="titlee">Qué es la tarta de queso?</div> 
                     
                     <div>
                         <div className="bloquee2">
-                        La <Link to="/cheesecake" className="ref" onClick={window.scrollTo(0, 0)}><b>Tarta de Queso</b></Link> es un alimento muy conocido que existe desde el siglo XX, es un postre que esta hecho por: queso cheddar, azúcar, ricota y muchas veces le añadimos crema.
+                        La <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>Tarta de Queso</b></Link> es un alimento muy conocido que existe desde el siglo XX, es un postre que esta hecho por: queso cheddar, azúcar, ricota y muchas veces le añadimos crema.
                         <div className="separacionPeque"/>
                         Tiene muchos ingredientes extras que se le pueden añadir como: crema de leche, patata, almendras, limones, naranjas, mermelada, chocolate, whisky.
                         <div className="separacionPeque"/>
-                        La <Link to="/cheesecake" className="ref" onClick={window.scrollTo(0, 0)}><b>Tarta de Queso</b></Link> mas comun es con salsa de arándanos. Todos estos ingredientes nombrados anteriormente se colocan encima de un bizcocho, por ejemplo, que hace de capa. Si uno quiere que la tarta sea mas ligera tiene la opción de hacerla refrigerada o horneada, de la otra manera, seria cocinada tradicionalmente. Dentro de ésta se hacen distintos productos como: yogures, sorbetes, galletas, brownies, helados con el mismo sabor.
+                        La <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>Tarta de Queso</b></Link> mas comun es con salsa de arándanos. Todos estos ingredientes nombrados anteriormente se colocan encima de un bizcocho, por ejemplo, que hace de capa. Si uno quiere que la tarta sea mas ligera tiene la opción de hacerla refrigerada o horneada, de la otra manera, seria cocinada tradicionalmente. Dentro de ésta se hacen distintos productos como: yogures, sorbetes, galletas, brownies, helados con el mismo sabor.
                         </div>
 
                         <hr/>
 
-                        <div className="subtitle">Tipos de <Link to="/cheesecake" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso</Link> y recetas</div>
+                        <div className="subtitle">Tipos de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso</Link> y recetas</div>
                         <div className="types">
                             <div className="childs">
                                 <div className="subTypesSpecial"> <Link to="/cheesetraditional" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso tradicional</Link></div>
@@ -144,7 +132,7 @@ const Cheesecake = () => {
                             <div className="separacionPeque"/>
                             <div className="versiones"><div className="subSubTitle">Italia: </div><div className="paises">La tarta de queso italiana se caracteriza por llevar como de ingredientes la <b>ricotta</b>, el <b>queso mascarpone</b> y la <b>miel</b>.</div></div>
                             <div className="separacionPeque"/>
-                            <div className="versiones"><div className="subSubTitle">Japón: </div><div className="paises">El cheesecake japonés recibe el nombre de <b>“Fuwa-Fuwa”</b> y se caracteriza por asemejarse más a un bizcocho que a un pastel.</div></div>
+                            <div className="versiones"><div className="subSubTitle">Japón: </div><div className="paises">El proteinas japonés recibe el nombre de <b>“Fuwa-Fuwa”</b> y se caracteriza por asemejarse más a un bizcocho que a un pastel.</div></div>
                             <div className="separacionPeque"/>
                             <div className="versiones"><div className="subSubTitle">Alemania: </div><div className="paises">Los alemanes suelen comer esta tarta con <b>queso cottage</b> y <b>masa recién hecha</b> en vez de base de galleta triturada.</div></div>
                         </div>
@@ -154,7 +142,7 @@ const Cheesecake = () => {
                         <div className="subtitle">Historia de la Tarta de Queso</div>
                         <div className="separacionTitulos"/>
                         <div className="bloquee2">
-                            La <Link to="/cheesecake" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso</Link> es el resultado de muchas modificaciones a lo largo de miles de años, se cree que su nacimiento se remonta 4000 años antes de la era actual, por la Antigua Grecia, en la isla de Samos.
+                            La <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso</Link> es el resultado de muchas modificaciones a lo largo de miles de años, se cree que su nacimiento se remonta 4000 años antes de la era actual, por la Antigua Grecia, en la isla de Samos.
                             <div className="separacionPeque"/>
                             En la Antigua Grecia se consideraba una auténtica fuente de energía y no en vano era alimento de los primeros atletas de los juegos olímpicos cuando estos comenzaron en el año 776 a.C, aunque no fue hasta el año 230 d.C cuando al escritor Ateneo se le atribuyó la autoría de la primera receta escrita de la tarta de queso, en aquellos tiempos simplemente se calentaba el queso triturado en una cacerola de cobre con miel y harina para posteriormente dejarlo enfriar y servir.
                             <div className="separacionPeque"/>
@@ -179,7 +167,8 @@ const Cheesecake = () => {
                 </div>
             </div>
         </div>
+        </div>
     )
 }
 
-export default Cheesecake;
+export default Proteinas;

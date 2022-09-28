@@ -31,6 +31,7 @@ import Forget from './pages/Forget'
 import Layout from './layout/Layout'
 import Success from './pages/Success'
 import Cheesecake from './pages/Cheesecake'
+import Proteinas from './pages/Proteinas'
 import Cheesetraditional from './pages/cheeseTypes/Cheesetraditional'
 import Cheesecolate from './pages/cheeseTypes/Cheesecolate'
 import Cheeseapple from './pages/cheeseTypes/Cheeseapple'
@@ -68,6 +69,7 @@ function App() {
             <Route  exact path="/" component={Cheesecake}/>
             <Route path="/About" component={About}/>
             <Route path="/Cheesecake" component={Cheesecake}/>
+            <Route path="/Proteinas" component={Proteinas}/>
             <Route path="/Cocktail" component={Cocktail}/>
                 <Route path="/Cheesetraditional" component={Cheesetraditional}/>
                 <Route path="/Cheesecolate" component={Cheesecolate}/>
