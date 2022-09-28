@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import {
     Link
-  } from "react-router-dom";
+} from "react-router-dom";
 
 import '../styles/proteinas.scss'
 
@@ -12,161 +12,247 @@ import tartaChocolate from '../images/cheesecake/tarta-de-queso-y-chocolate.jpeg
 import tartaManzana from '../images/cheesecake/tarta-de-queso-y-manzana.jpeg'
 
 const Proteinas = () => {
-    return(
+    return (
         <div className="proteinasJS">
             <div className="proteinas">
-            <Carousel>
-                <Carousel.Item interval={4000}>
-                    <img className="d-block w-100" src={tartaTradicional} />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                <Carousel>
+                    <Carousel.Item interval={4000}>
+                        <img className="d-block w-100" src={tartaTradicional} alt="First slide" />
+                        <Carousel.Caption>
+                            <h3>First slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
-                <Carousel.Item interval={4000}>
-                    <img className="d-block w-100" src={tartaChocolate} alt="Second slide" />
+                    <Carousel.Item interval={4000}>
+                        <img className="d-block w-100" src={tartaChocolate} alt="Second slide" />
+                        <Carousel.Caption>
+                            <h3>Second slide label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                    <Carousel.Item interval={4000}>
+                        <img className="d-block w-100" src={tartaManzana} alt="Third slide" />
+                        <Carousel.Caption>
+                            <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
 
-                <Carousel.Item interval={4000}>
-                    <img className="d-block w-100" src={tartaManzana} alt="Third slide" />
+                <div id="espacio">
+                    <div className="article1">
+                        <div className="titlee">¿Qué son las Proteínas? Tipos, Funciones y Beneficios</div>
 
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-                
-            <div id="espacio">
-                <div className="article1">
-                    <div className="titlee">Qué es la tarta de queso?</div> 
-                    
-                    <div>
-                        <div className="bloquee2">
-                        La <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>Tarta de Queso</b></Link> es un alimento muy conocido que existe desde el siglo XX, es un postre que esta hecho por: queso cheddar, azúcar, ricota y muchas veces le añadimos crema.
-                        <div className="separacionPeque"/>
-                        Tiene muchos ingredientes extras que se le pueden añadir como: crema de leche, patata, almendras, limones, naranjas, mermelada, chocolate, whisky.
-                        <div className="separacionPeque"/>
-                        La <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>Tarta de Queso</b></Link> mas comun es con salsa de arándanos. Todos estos ingredientes nombrados anteriormente se colocan encima de un bizcocho, por ejemplo, que hace de capa. Si uno quiere que la tarta sea mas ligera tiene la opción de hacerla refrigerada o horneada, de la otra manera, seria cocinada tradicionalmente. Dentro de ésta se hacen distintos productos como: yogures, sorbetes, galletas, brownies, helados con el mismo sabor.
-                        </div>
+                        <div>
+                            <div className="bloquee2">
+                                Cada célula del cuerpo contiene <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link>, debido a que esta es muy importante para mantener en buen estado los huesos, músculos, la piel y todos los tejidos.
+                                <div className="separacionPeque" />
+                                Esta se obtiene mediante la alimentación, teniendo en cuenta que, el requerimiento de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> de una persona no es igual al de otra. Pueden ser tanto de origen animal como vegetal.
+                                <div className="separacionPeque" />
+                                Los dos temas principales que derivan las proteínas són: Los <Link to="/aminoacidos" className="ref" onClick={window.scrollTo(0, 0)}><b>aminoácidos</b></Link> y las citocinas.
+                            </div>
 
-                        <hr/>
+                            <hr />
 
-                        <div className="subtitle">Tipos de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso</Link> y recetas</div>
-                        <div className="types">
-                            <div className="childs">
-                                <div className="subTypesSpecial"> <Link to="/cheesetraditional" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso tradicional</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaTradicional} className="imgType" alt="tradicional pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="separacionPeque"/>
-                                <div className="subTypesSpecial"> <Link to="/cheesecolate" className="ref">Tarta de Queso y Chocolate</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaChocolate} className="imgType" alt="chocolate pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypesSpecial"> <Link to="/cheeseapple" className="ref">Tarta de Queso y Manzana</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="manzana pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypesSpecial"> <Link to="/cheeseblueberry" className="ref">Tarta de Queso y Arándanos</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="arandanos pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypes"> <Link to="/cheesegreece" className="ref">Tarta de Queso y Yogur Griego</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="yogur pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypes"> <Link to="/cheesesweet" className="ref">Tarta de Queso y Caramelo</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="caramelo pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypes"> <Link to="/cheesecurd" className="ref">Tarta de Requesón</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="requesón pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypes"> <Link to="/cheesericotta" className="ref">Tarta de Queso Ricotta y Mascarpone</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="ricotta pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypes"> <Link to="/cheesebrownie" className="ref">Tarta de Queso Brownie</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="brownie pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypes"> <Link to="/cheesewhite" className="ref">Tarta de Queso y Chocolate Blanco</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="white pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypes"> <Link to="/cheesesalad" className="ref">Tarta de Queso Salada</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="salad pic"/>
-                            </div>
-                            <div className="childs">
-                                <div className="subTypes"> <Link to="/cheeselime" className="ref">Tarta de Queso y Lima</Link></div>
-                                <div className="separacionPeque"/>
-                                <img src={tartaManzana} className="imgType" alt="lima pic"/>
+                            <div className="subtitle">¿Qué son las proteínas y para qué sirven?</div>
+                            <div className="separacionTitulos" />
+                            <div className="bloquee2">
+                                Las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> son moléculas de <Link to="/aminoacidos" className="ref" onClick={window.scrollTo(0, 0)}><b>aminoácidos</b></Link> unidas por enlaces peptídicos. Están presentes en todas las células del cuerpo, por lo tanto, participan en todos los procesos funcionales de las mismas. La composición química de las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> es la siguiente:                            <div className="separacionPeque" />
+                                <div className="separacionPeque" />
+                                ✓ Oxígeno
+                                <br />
+                                ✓ Carbono
+                                <br />
+                                ✓ Hidrógeno
+                                <br />
+                                ✓ Nitrógeno
+                                <br />
+                                ✓ Azufre
+                                <br />
+                                ✓ Fósforo
+                                <div className="separacionPeque" />
+                                La función que realizan las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> es de vital importancia. Gracias a su contenido de nitrógeno benefician el crecimiento corporal. También ayudan al mantenimiento de los tejidos. Además, permiten transportar compuestos esenciales a través de la sangre.
                             </div>
 
                         </div>
 
-                        <hr/>
+                        <hr />
                         <div id="bloquee">
-                            <div className="subtitle">Versiones de tarta de queso en diferentes países</div>
-                            <div className="separacionTitulos"/>
-                            <div className="versiones"><div className="subSubTitle">Grecia: </div><div className="paises">La versión griega se caracteriza por utilizar la <b>mizithra</b> o como nosotros le llamamos <b>queso feta</b></div></div>
-                            <div className="separacionPeque"/>
-                            <div className="versiones"><div className="subSubTitle">Italia: </div><div className="paises">La tarta de queso italiana se caracteriza por llevar como de ingredientes la <b>ricotta</b>, el <b>queso mascarpone</b> y la <b>miel</b>.</div></div>
-                            <div className="separacionPeque"/>
-                            <div className="versiones"><div className="subSubTitle">Japón: </div><div className="paises">El proteinas japonés recibe el nombre de <b>“Fuwa-Fuwa”</b> y se caracteriza por asemejarse más a un bizcocho que a un pastel.</div></div>
-                            <div className="separacionPeque"/>
-                            <div className="versiones"><div className="subSubTitle">Alemania: </div><div className="paises">Los alemanes suelen comer esta tarta con <b>queso cottage</b> y <b>masa recién hecha</b> en vez de base de galleta triturada.</div></div>
-                        </div>
-                        
-                        <hr/>
+                            <div className="subtitle">¿Cuáles son los alimentos con proteínas?</div>
+                            <div className="separacionTitulos" />
+                            Las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> se obtienen de la alimentación. El porcentaje adecuado de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> es importante para tener una alimentación sana, equilibrada y con los elementos proteicos suficientes.
 
-                        <div className="subtitle">Historia de la Tarta de Queso</div>
-                        <div className="separacionTitulos"/>
+                            Muchas personas relacionan la proteína con carne, pero en realidad esta no se encuentra solamente en alimentos de origen animal, sino también en algunos alimentos de origen vegetal. Para tener una dieta rica en <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteína</b></Link>, mostraremos algunos alimentos proteicos:
+                            <div className="separacionPeque" />
+                            ✓ <b>Carnes</b>. La <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteína</b></Link> se encuentra en todo tipo de carne. Las más consumidas son las carnes de pollo, pescado, bovinos, cerdo y conejo.
+                            <div className="separacionPeque" />
+                            ✓ <b>Lácteos</b>. Todos los productos hechos a base de leche las contienen, ya sea queso, mantequilla, yogur, los dulces de leche, entre otros.
+                            <div className="separacionPeque" />
+                            ✓ <b>Granos</b>. Los granos más consumidos por su contenido proteico son las lentejas, la Soja, arvejas, frijol y los garbanzos.
+                            <div className="separacionPeque" />
+                            ✓ <b>Huevos</b>. Los huevos son un tipo de alimento muy consumido por su gran valor proteico. Los más conocidos son los de gallina y los de codorniz.
+                            <div className="separacionPeque" />
+                            ✓ <b>Cereales</b>. Algunos de los cereales son el arroz, el trigo, la cebada, quinoa y la avena.
+                            <div className="separacionPeque" />
+                            ✓ <b>Frutos secos</b>. Los frutos secos útiles para una excelente dieta son el maní, las nueces y las semillas de merey.
+                            <div className="separacionPeque" />
+                            Solo los alimentos de origen animal tienen proteínas completas, es decir, aportan todos los <Link to="/aminoacidos" className="ref" onClick={window.scrollTo(0, 0)}><b>aminoácidos</b></Link> que el cuerpo requiere. Pero si se desean obtener todos los <Link to="/aminoacidos" className="ref" onClick={window.scrollTo(0, 0)}><b>aminoácidos</b></Link> con alimentos de origen vegetal se debe realizar una combinación entre los mismos, en este caso los suplementos ayudan a lograr una combinación óptima.
+                        </div>
+
+                        <hr />
+
+                        <div className="subtitle">Tipos de proteínas</div>
+                        <div className="separacionTitulos" />
                         <div className="bloquee2">
-                            La <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso</Link> es el resultado de muchas modificaciones a lo largo de miles de años, se cree que su nacimiento se remonta 4000 años antes de la era actual, por la Antigua Grecia, en la isla de Samos.
-                            <div className="separacionPeque"/>
-                            En la Antigua Grecia se consideraba una auténtica fuente de energía y no en vano era alimento de los primeros atletas de los juegos olímpicos cuando estos comenzaron en el año 776 a.C, aunque no fue hasta el año 230 d.C cuando al escritor Ateneo se le atribuyó la autoría de la primera receta escrita de la tarta de queso, en aquellos tiempos simplemente se calentaba el queso triturado en una cacerola de cobre con miel y harina para posteriormente dejarlo enfriar y servir.
-                            <div className="separacionPeque"/>
-                            Cuando Grecia fue conquistada por los romanos, la tarta de queso se convirtió en un motín de guerra. Ellos modificaron la receta incluyendo huevo y horneándola entre ladrillos calientes, la rebautizaron con el nombre de libuma y era un pastel que solo se servía en ocasiones muy especiales.
+                            Los tipos de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> se pueden definir según diferentes criterios, por eso no existe un sistema de clasificación único para ellas. Estas pueden clasificarse según su forma, solubilidad, su composición química o su origen.
+                            <div className="separacionPeque" />
+                            ✓ <b>Según la forma</b>. Las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> pueden ser fibrosas, globulares o mixtas.
+                            <div className="separacionPeque" />
+                            ✓ <b>Según la solubilidad</b>. De acuerdo a la solubilidad de las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link>, estas pueden ser globulares, fibrosas, integrales de membrana e intrínsecamente desordenadas.
+                            <div className="separacionPeque" />
+                            ✓ <b>Según composición química.</b> Estas pueden ser <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> simples o conjugadas.
+                            <div className="separacionPeque" />
+                            ✓ <b>Según el origen.</b> Las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> pueden ser de origen animal o vegetal.
                         </div>
 
-                        <hr/>
+                        <hr />
 
-                        <div className="subtitle">Composición</div>
-                        <div className="separacionTitulos"/>
+                        <div className="subtitle">¿Cuáles son las proteínas que necesita el cuerpo humano?</div>
+                        <div className="separacionTitulos" />
                         <div className="bloquee2">
-                            Los antiguos griegos lo consideraban un pastel. Algunos autores modernos señalan que la presencia de huevos, como la única forma de levadura, es la prueba de que se trata de una torta. Y otros afirman que la corteza separada, el relleno suave, y la ausencia de harina demuestra que se trata de una tarta de crema.
-                            <div className="separacionPeque"/>
-                            No sólo el tipo de queso afecta la textura y el sabor, sino la habilidad de incorporar otro tipo de ingredientes. Cuando el relleno de un pastel de queso es muy líquido (o aguado) no será tan estructuralmente firme y se desparramará sobre la mesa. Una forma de evitar esto es utilizar gelatina sin sabor o un poco de fécula de maíz batida con huevos.
-                            <div className="separacionPeque"/>
-                            Es recomendable no utilizar ninguna fruta que contenga enzimas "come proteínas" vivas, tales como papaya, piña o mango sin cocinar estas primero, si no el pastel de queso no cuajará.
-                            <div className="separacionPeque"/>
-                            Para que el pastel de queso no se quiebre por encima al hornearlo, se recomienda no batir demasiado los huevos cuando se incorporan con el queso cremoso. También, cuando el pastel esté cuajado, se puede apagar el horno, y dejar que se cocine con el calor remanente.
-                            <div className="separacionFooter"/>
+                            Se debe tener en cuenta que el cuerpo humano no almacena <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> de la misma manera que lo hace con las grasas, por lo tanto, es importante que la ingestión proteica sea a diario.
+                            <div className="separacionPeque" />
+                            Es común que las personas que desean realizar una dieta rica en alimentos proteicos pregunten ¿cuáles son las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> que necesita el cuerpo humano? O ¿cuáles son las proteínas más importantes? En este caso se debe saber que el cuerpo humano requiere distinta cantidad según varios parámetros; edad, actividad física, estado de salud…
+                            <div className="separacionPeque" />
+                            Tomar <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> de origen animal se debe hacer con moderación, ya que la carne suele tener un alto contenido en otros nutrientes como la grasa. Existen preparados de proteína para dietas o deportistas, estos preparados es preferible utilizarlos bajo recomendación de un especialista y con la cantidad adecuada.
+                            <div className="separacionPeque" />
+                            Para un adulto promedio se recomienda un consumo de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteína</b></Link> al día de 0,83 gramos por cada kilogramo de peso corporal. Durante el desarrollo de los niños o el periodo de embarazo y lactancia, el consumo de alimentos proteicos debe ser relativamente alto, pues en dichos períodos aumentan las actividades metabólicas.
                         </div>
-                    </div> 
+
+                        <hr />
+
+                        <div className="subtitle">¿Que beneficios aportan las proteínas?</div>
+                        <div className="separacionTitulos" />
+                        <div className="bloquee2">
+                            El ser humano no puede dejar de comer albuminoideo, pues estas son necesarias para que el organismo cumpla todas sus funciones. En adelante describiremos algunos de los beneficios que aporta la ingesta de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link>:
+                            <div className="separacionPeque" />
+                            <div className="aportes">
+                                <h5>Función a nivel celular</h5>
+                                <p>Son claves en muchos procesos celulares, como puede ser la formación estructural en las células (formar membranas), función hormonal, función defensiva (contra patógenos externos), función reparadora (son los «albañiles» de nuestro cuerpo….</p>
+                            </div>
+                            <div className="aportes">
+                                <h5>Mantiene la masa muscular</h5>
+                                <p>Un buen consumo evita la pérdida progresiva de masa muscular. Esto resulta muy beneficioso para los adultos mayores, pues son quienes tienen mayor probabilidad de tener mucha perdida de músculo.</p>
+                            </div>
+                            <div className="aportes">
+                                <h5>Aporta un mayor rendimiento físico</h5>
+                                <p>Los albuminoides son la clave fundamental para reparar el tejido dañado después de tener mucha actividad física, ya sea al hacer ejercicios o al realizar trabajos forzosos. Por eso, la mayoría de los atletas las consumen en altas cantidades.</p>
+                            </div>
+                            <div className="aportes">
+                                <h5>Control de peso</h5>
+                                <p>Estudios han demostrado que la ingesta adecuada de alimentos proteicos produce sensación de saciedad en el cuerpo. Además, también ayudan a la pérdida de peso, especialmente cuando están libres de grasa.</p>
+                            </div>
+                        </div>
+
+                        <div className="subtitle">¿Cuál es la mejor proteína para aumentar la masa muscular?</div>
+                        <div className="separacionTitulos" />
+                        <div className="bloquee2">
+
+                            <p>Si se desea tener una apariencia atlética o un mejor rendimiento deportivo, es importante consumir alimentos proteicos, pues el tejido muscular está formado en mayor parte por <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link>.
+                                <div className="separacionPeque" />
+                                No todos los alimentos proteicos aumentan la masa muscular de forma eficiente, por eso, daremos a conocer los mejores alimentos  para conseguir un buen nivel de musculatura.
+                                <div className="separacionPeque" />
+                                Los alimentos más ricos son las carnes magras, los lácteos, los granos, los huevos y los frutos secos.
+                                <div className="separacionPeque" />
+                                Una manera eficaz de obtener un gran aporte es consumiendo suplementos proteicos, estos están hechos a base de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteína</b></Link> de huevo, suero de leche y soja.
+                                <div className="separacionPeque" />
+                                Es importante tener en cuenta que, cada fisiología corporal es diferente, por lo tanto, los requerimientos de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> también lo son. Además, cuando las personas realizan ejercicios, la necesidad de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> dependen de la intensidad de los entrenamientos. Como resultado, es de vital importancia que cada persona tenga un buen consumo de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link>.
+                            </p>
+                        </div>
+
+                        <div className="subtitle">¿Cuál es la función principal de las proteínas?</div>
+                        <div className="separacionTitulos" />
+                        <div className="bloquee2">
+                            <p>De entre todas las biomoléculas, las <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> desempeñan un papel fundamental en el organismo. Son esenciales para el crecimiento, gracias a su contenido de nitrógeno, que no está presente en otras moléculas como grasas o hidratos de carbono. También lo son para las síntesis y mantenimiento de diversos tejidos o componentes del cuerpo, como los jugos gástricos, la hemoglobina, las vitaminas, las hormonas y las enzimas (estas últimas actúan como catalizadores biológicos haciendo que aumente la velocidad a la que se producen las reacciones químicas del metabolismo). Asimismo, ayudan a transportar determinados gases a través de la sangre, como el oxígeno y el dióxido de carbono, y funcionan a modo de amortiguadores para mantener el equilibrio ácido-base y la presión oncótica del plasma.
+                                <div className="separacionPeque" />
+                                Otras funciones más específicas son, por ejemplo, las de los anticuerpos, un tipo de <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> que actúan como defensa natural frente a posibles infecciones o agentes externos; el colágeno, cuya función de resistencia lo hace imprescindible en los tejidos de sostén o la miosina y la actina, dos <Link to="/proteinas" className="ref" onClick={window.scrollTo(0, 0)}><b>proteínas</b></Link> musculares que hacen posible el movimiento, entre muchas otras.
+                            </p>
+                        </div>
+
+                        <div className="subtitle">Poner los subtemas y redireccionar a ellos, aminoacidos citocinas,etc</div>
+                        <div className="separacionTitulos" />
+                        <div className="bloquee2">
+
+                            <div className="types">
+                                <div className="childs">
+                                    <div className="subTypesSpecial"> <Link to="/cheesetraditional" className="ref" onClick={window.scrollTo(0, 0)}>Tarta de Queso tradicional</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaTradicional} className="imgType" alt="tradicional pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="separacionPeque" />
+                                    <div className="subTypesSpecial"> <Link to="/cheesecolate" className="ref">Tarta de Queso y Chocolate</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaChocolate} className="imgType" alt="chocolate pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypesSpecial"> <Link to="/cheeseapple" className="ref">Tarta de Queso y Manzana</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="manzana pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypesSpecial"> <Link to="/cheeseblueberry" className="ref">Tarta de Queso y Arándanos</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="arandanos pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypes"> <Link to="/cheesegreece" className="ref">Tarta de Queso y Yogur Griego</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="yogur pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypes"> <Link to="/cheesesweet" className="ref">Tarta de Queso y Caramelo</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="caramelo pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypes"> <Link to="/cheesecurd" className="ref">Tarta de Requesón</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="requesón pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypes"> <Link to="/cheesericotta" className="ref">Tarta de Queso Ricotta y Mascarpone</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="ricotta pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypes"> <Link to="/cheesebrownie" className="ref">Tarta de Queso Brownie</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="brownie pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypes"> <Link to="/cheesewhite" className="ref">Tarta de Queso y Chocolate Blanco</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="white pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypes"> <Link to="/cheesesalad" className="ref">Tarta de Queso Salada</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="salad pic" />
+                                </div>
+                                <div className="childs">
+                                    <div className="subTypes"> <Link to="/cheeselime" className="ref">Tarta de Queso y Lima</Link></div>
+                                    <div className="separacionPeque" />
+                                    <img src={tartaManzana} className="imgType" alt="lima pic" />
+                                </div>
+                                <div className="separacionFooter" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     )
 }
