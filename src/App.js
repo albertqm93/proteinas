@@ -33,6 +33,7 @@ import Success from './pages/Success'
 import Cheesecake from './pages/Cheesecake'
 import Proteinas from './pages/Proteinas'
 import Aminoacidos from './pages/Aminoacidos'
+import Glutamina from './pages/Glutamina'
 import Cheesetraditional from './pages/cheeseTypes/Cheesetraditional'
 import Cheesecolate from './pages/cheeseTypes/Cheesecolate'
 import Cheeseapple from './pages/cheeseTypes/Cheeseapple'
@@ -72,6 +73,7 @@ function App() {
           <Route path="/Cheesecake" component={Cheesecake} />
           <Route path="/Proteinas" component={Proteinas} />
           <Route path="/Aminoacidos" component={Aminoacidos} />
+          <Route path="/Glutamina" component={Glutamina} />
           <Route path="/Cocktail" component={Cocktail} />
           <Route path="/Cheesetraditional" component={Cheesetraditional} />
           <Route path="/Cheesecolate" component={Cheesecolate} />
