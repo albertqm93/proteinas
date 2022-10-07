@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 import {
     Link
-  } from "react-router-dom";
+} from "react-router-dom";
 
 import './footer.scss';
 import Facebook from '../images/facebook.png';
@@ -17,7 +17,7 @@ const Footer = () => {
 
     const isLogged = useSelector(state => state.user ? state.user.logged : false);
 
-    return(
+    return (
         <div>
             <div className="footer">
                 <div className="socialMedia">
@@ -83,13 +83,19 @@ const Footer = () => {
                             <Link to="/about" className="title">About</Link>
                         </li>)}
                         <li className="headerLi">
-                        <Link to="/cheesecake" className="title">Tarta de Queso</Link>
+                            <Link to="/cheesecake" className="title">Tarta de Queso</Link>
                         </li>
                         <li className="headerLi">
-                        <Link to="/proteinas" className="title">Proteinas</Link>
+                            <Link to="/proteinas" className="title">Proteinas</Link>
                         </li>
                         <li className="headerLi">
-                        <Link to="/aminoacidos" className="title">Aminoacidos</Link>
+                            <Link to="/aminoacidos" className="title">Aminoacidos</Link>
+                        </li>
+                        <li className="headerLi">
+                            <Link to="/glutamina" className="title">Glutamina</Link>
+                        </li>
+                        <li className="headerLi">
+                            <Link to="/fenilalanina" className="title">Fenilalanina</Link>
                         </li>
                         {isLogged && (<li className="footerLi">
                             <Link to="/cocktail" className="title">Cocktail</Link>
