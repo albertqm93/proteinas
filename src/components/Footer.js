@@ -82,20 +82,23 @@ const Footer = () => {
                         {isLogged && (<li className="footerLi">
                             <Link to="/about" className="title">About</Link>
                         </li>)}
-                        <li className="headerLi">
+                        <li className="footerLi">
                             <Link to="/cheesecake" className="title">Tarta de Queso</Link>
                         </li>
-                        <li className="headerLi">
+                        <li className="footerLi">
                             <Link to="/proteinas" className="title">Proteinas</Link>
                         </li>
-                        <li className="headerLi">
+                        <li className="footerLi">
                             <Link to="/aminoacidos" className="title">Aminoacidos</Link>
                         </li>
-                        <li className="headerLi">
+                        <li className="footerLi">
                             <Link to="/glutamina" className="title">Glutamina</Link>
                         </li>
-                        <li className="headerLi">
+                        <li className="footerLi">
                             <Link to="/fenilalanina" className="title">Fenilalanina</Link>
+                        </li>
+                        <li className="footerLi">
+                            <Link to="/moleculas" className="title">Moleculas</Link>
                         </li>
                         {isLogged && (<li className="footerLi">
                             <Link to="/cocktail" className="title">Cocktail</Link>

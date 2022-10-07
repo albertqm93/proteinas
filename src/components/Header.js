@@ -49,6 +49,9 @@ const Header = () => {
                     <li className="headerLi">
                         <Link to="/fenilalanina" className="title">Fenilalanina</Link>
                     </li>
+                    <li className="headerLi">
+                        <Link to="/moleculas" className="title">Moleculas</Link>
+                    </li>
                     {isLogged && (<li className="headerLi">
                             <Link to="/cocktail" className="title">Cocktail</Link>
                     </li>)}

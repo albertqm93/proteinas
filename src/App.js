@@ -35,6 +35,7 @@ import Proteinas from './pages/Proteinas'
 import Aminoacidos from './pages/Aminoacidos'
 import Glutamina from './pages/Glutamina'
 import Fenilalanina from './pages/Fenilalanina'
+import Moleculas from './pages/Moleculas'
 import Cheesetraditional from './pages/cheeseTypes/Cheesetraditional'
 import Cheesecolate from './pages/cheeseTypes/Cheesecolate'
 import Cheeseapple from './pages/cheeseTypes/Cheeseapple'
@@ -76,6 +77,7 @@ function App() {
           <Route path="/Aminoacidos" component={Aminoacidos} />
           <Route path="/Glutamina" component={Glutamina} />
           <Route path="/Fenilalanina" component={Fenilalanina} />
+          <Route path="/Moleculas" component={Moleculas} />
           <Route path="/Cocktail" component={Cocktail} />
           <Route path="/Cheesetraditional" component={Cheesetraditional} />
           <Route path="/Cheesecolate" component={Cheesecolate} />
