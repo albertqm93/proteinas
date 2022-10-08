@@ -100,6 +100,9 @@ const Footer = () => {
                         <li className="footerLi">
                             <Link to="/moleculas" className="title">Moleculas</Link>
                         </li>
+                        <li className="footerLi">
+                            <Link to="/organismo" className="title">Organismo</Link>
+                        </li>
                         {isLogged && (<li className="footerLi">
                             <Link to="/cocktail" className="title">Cocktail</Link>
                         </li>)}
